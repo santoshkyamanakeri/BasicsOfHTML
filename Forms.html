@@ -9,29 +9,67 @@
 </head>
 
 <body text="pink" bgcolor="brown" align="center">
-    <h1>Job Application Form</h1>
-    <label for="name"> Name: </label>
-    <input type="text" placeholder="Enter Your Name" id="name">
-    <br>
-    <br>
-    <label for="email">Email: </label>
-    <input type="text" placeholder="Enter Your Email" id="email">
-    <br>
-    <br>
-    <label for="cell">Contact: </label>
-    <input type="text" placeholder="Enter Your Contact" value="+91" maxlength="13" id="cell">
-    <br>
-    <br>
-    <label for="pass">Password: </label>
-    <input type="password" placeholder="Enter Your Password" maxlength="8" id="pass">
-    <br>
-    <br>
-    <label for="date">Date Of Birth: </label>
-    <input type="datetime-local" id="date">
-    <br>
-    <br>
-    Skills
-    <input type="range">
+
+    <form action="www.google.com">
+        <h1>Job Application Form</h1>
+        <label for="firstname">First Name: </label>
+        <input type="text" placeholder="Enter Your Name" id="firstname">
+        <label for="lastname">Last Name: </label>
+        <input type="text" placeholder="Enter Your Name" id="lastname">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" placeholder="Enter Your Email" id="email">
+        <br>
+        <br>
+        Contact:
+        <select name="cell" id="cell">
+            <option>+91</option>
+            <option>+81</option>
+            <option>+71</option>
+            <option>+61</option>
+            <option>+51</option>
+        </select>
+        <input type="tel" maxlength="13">
+        <br>
+        <br>
+        <label for="pass">Password: </label>
+        <input type="password" placeholder="Enter Your Password" maxlength="8" id="pass">
+        <br>
+        <br>
+        <label for="date">Date Of Birth: </label>
+        <input type="datetime-local" id="date">
+        <br>
+        <br>
+        Skills
+        <input type="range">
+        <fieldset>
+            <legend>Select You Gender</legend>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+            <input type="radio" name="gender">Others <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Select Your Subjects</legend>
+            <input type="checkbox">HTML <br>
+            <input type="checkbox">CSS <br>
+            <input type="checkbox">JAVA <br>
+            <input type="checkbox">JAVA SCRIPT<br>
+            <input type="checkbox">REACT JS<br>
+            <input type="checkbox">MONGO DB<br>
+        </fieldset>
+        <br>
+        Upload Your Resume:
+        <input type="file">
+        <br>
+        Upload Your Photo
+        <input type="file">
+        <br><br>
+        <input type="Submit">
+        <input type="Reset">
+
+    </form>
 </body>
 
 </html>
